@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+	<title>Test</title>
+
+
+	<style type="text/css">
+	body {
+	background-image: url(fondo.png);background-size: cover; background-repeat: no-repeat; margin: 0; height: 100vh;
+
+	}
+
+	.formulario{
+		margin-top: 100px;
+		padding: 15px;
+		background-color: #000000;
+		border-radius: 5px;
+		opacity: 0.8;
+
+		
+	}
+	.tex{
+		margin: 3%;
+		margin-top: 5%;
+		color: #ffffff;
+
+	}
+	input:invalid {
+	  border: 2px dashed red;
+	}
+
+	input:invalid:required {
+	  background-image: linear-gradient(to right, pink, lightgreen);
+	}
+
+	input:valid {
+	  border: 2px solid black;
+	}
+	h3{
+		text-align: center;
+		color: #8f8f8f;
+	}
+	@media(min-width: 500px){
+		.formulario{
+			margin: auto;
+			width: 500px;
+			margin-top: 150px;
+		}
+	}
+	</style>
+</head>
+<body >
+	<div class="formulario">
+		<h3>Pequeño cuestionario de Sekiro</h3>
+		<div class="tex">
+		
+		<div class="">
+			<div class="col-12">
+  <form name="testgi" onsubmit="return motor()">
+  		<div class="form-group ">
+			<label class="col-form-label" for="nombre" >1-Fecha de lanzamiento de Sekiro</label> <br>
+			<input type="radio" name="p1" value="a" required> 28 de Enero del 2020<br>
+			<input type="radio" name="p1" value="b" required> 22 de Marzo de 2019<br>
+			<input type="radio" name="p1" value="c" required> 01 de Febrero del 2019 <br>
+			<input type="radio" name="p1" value="d" required> 28 de Septiembre del 2019<br>
+		</div>
+
+		<div class="form-group ">
+			<label class="col-form-label" for="nombre" >2-Se puede hacer Parry a la espada de viento de Isshin Ashina</label> <br>
+			<input type="radio" name="p2" value="a" required> Verdadero<br>
+			<input type="radio" name="p2" value="b" required> Falso<br>
+		</div>
+
+		<div class="form-group ">
+			<label class="col-form-label" for="nombre" >3-Segunda espada que consigue el lobo (Sin contar la herramienta)</label> <br>
+			<input type="radio" name="p3" value="a" required> Sabimaru<br>
+			<input type="radio" name="p3" value="b" required> Espada Mortal<br>
+			<input type="radio" name="p3" value="c" required> Second Hand Sword<br>
+			<input type="radio" name="p3" value="d" required> Pata de lobo<br>
+		</div>
+
+		<div class="form-group ">
+			<label class="col-form-label" for="nombre" >4-Los dos personajes que te ayudan principalmente</label> <br>
+			<input type="checkbox" name="px"> Isshin Ashina<br>
+			<input type="checkbox" name="p4"> Emma<br>
+			<input type="checkbox" name="px"> El Descendiente Celestial <br>
+			<input type="checkbox" name="p5"> El Escultor<br>
+			<input type="checkbox" name="px"> El Búho<br>
+			<input type="checkbox" name="px"> Hanbei el Inmortal<br>
+		</div>
+
+		<div class="form-group ">
+			<label class="col-form-label" for="nombre" >5-Son protesis de shinobi</label> <br>
+			<input type="checkbox" name="p8"> Hacha cargada<br>
+			<input type="checkbox" name="p6"> Silbato<br>
+			<input type="checkbox" name="px"> Roca cargada<br>
+			<input type="checkbox" name="px"> Abanico solar<br>
+			<input type="checkbox" name="px"> Puño del mono<br>
+			<input type="checkbox" name="p7"> Lanza cargada<br>
+		</div>
+
+		<div class="form-group ">
+			<label class="col-form-label" for="nombre" >6-No son espadas de Sekiro</label> <br>
+			<input type="checkbox" name="px"> Kusabimaru<br>
+			<input type="checkbox" name="px"> Espada Mortal<br>
+			<input type="checkbox" name="p9"> Tachi<br>
+			<input type="checkbox" name="p10"> Bokken<br>
+			<input type="checkbox" name="px"> Sabimaru<br>
+		</div>
+
+		<div class="form-group ">
+			<label class="col-form-label">7-Protesis shinobi que se consigue al organizar estas letras rovecu ed blinea</label>
+			<input class="form-control col-12" type="text" placeholder="Protesis shinobi:" aria-label=".form-control-sm example" name="p11" required>
+		</div>
+
+		<div class="form-group ">
+			<label class="col-form-label">8-Jefe que se consgiue  al reorganizar estas letras isIsnh nAiahs</label>
+			<input class="form-control col-12" type="text" placeholder="Nombre:" aria-label=".form-control-sm example" name="p12" required>
+		</div>
+
+		<div class="form-group ">
+			<label class="col-form-label">9-Ninjutsu que se consgiue  al reorganizar estas letras uuiNjstn ed la Connóisec</label>
+			<input class="form-control col-12" type="text" placeholder="Nombre" aria-label=".form-control-sm example" name="p13" required>
+		</div>
+			
+			 <br>
+			<button class="btn btn-outline-success" type="submit">Enviar</button>
+			<div id="resultado"></div>
+			<br>
+			
+	</form>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="motor.js"></script>
+</body>
+</html>
